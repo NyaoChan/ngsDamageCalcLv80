@@ -1,0 +1,108 @@
+html {
+	background-color: #313231;
+	color: lightgray;
+	font-size: 14px;
+	width: 960px;
+}
+
+th,
+td {
+	border: 2px gray solid;
+	border-radius: 4px;
+	empty-cells: hide;
+	text-align: center;
+	vertical-align: center;
+	align-items: center;
+	height: 34px;
+	width: 74px;
+}
+
+th.wide{
+	width: 111px;
+}
+
+.Important_Contents {
+	border: 2px lightblue solid;
+	color: lightblue;
+}
+
+a {
+	color: lightgray;
+	text-decoration: none;
+}
+
+select {
+	color: lightsalmon;
+	font-size: 16px;
+	height: 24px;
+	width: 70px;
+	vertical-align: center;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+select.wide {
+	width: 150px;
+	text-align: center;
+}
+
+input {
+	font-size: 16px;
+	height: 24px;
+	width: 70px;
+	vertical-align: center;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+input[type=number] {
+	color: lightsalmon;
+	border: none;
+}
+
+input[type=number]:focus {
+	background-color: lightsalmon;
+	color: #313231;
+	border-radius: 2px;
+}
+
+input[type=text] {
+	color: lightgreen;
+	text-align: right;
+	border-radius: 2px;
+}
+
+input[type=button] {
+	background-color: lightsalmon;
+	border: 2px gray solid;
+	color: #313231;
+	border-radius: 4px;
+	height: 38px;
+	width: 78px;
+	font-size: 28px;
+	line-height: 28px;
+	vertical-align: center;
+}
+
+input[type=button]:active {
+	background-color: transparent;
+	border: none;
+	color: lightgray;
+}
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	margin-top: 30px;
+	margin-left: 30px;
+	width: 950px;
+}
+
+form{
+	width: 904px;
+}
