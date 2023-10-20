@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>マルグル用</title>
+  <meta name="application-name" content="マルグル用">
+  <meta name="description" content="マルグル用です">
+  <meta property="og:title" content="マルグル用">
+  <meta property="og:description" content="マルグル用です">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="ngsDamageCalc.css">
+  <script src="ngsDamageCalc.js"></script>
+</head>
+
+<body>
+  <form>
+    <table>
+      <tr>
+        <th class="Important_Contents">威力</th>
+        <th>武器</th>
+        <th>防具1</th>
+        <th>防具2</th>
+        <th>防具3</th>
+        <th></th>
+        <th class="Important_Contents">下限</th>
+        <th>武器</th>
+        <th>防具1</th>
+        <th>防具2</th>
+        <th>防具3</th>
+      </tr>
+
+      <tr>
+        <td>能力1</td>
+        <td><input type="number" class="Augment_Potency" id="Weapon_Augment_Potency_1" value="4" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_1_Augment_Potency_1" value="4" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_2_Augment_Potency_1" value="4" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_3_Augment_Potency_1" value="4" step="0.25" min="0"></td>
+        <td></td>
+        <td>能力1</td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Weapon_Augment_Potency_Floor_Increase_1" value="3" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_1_Augment_Potency_Floor_Increase_1" value="3" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_2_Augment_Potency_Floor_Increase_1" value="3" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_3_Augment_Potency_Floor_Increase_1" value="3" step="0.25" min="0"></td>
+      </tr>
+
+      <tr>
+        <td>能力2</td>
+        <td><input type="number" class="Augment_Potency" id="Weapon_Augment_Potency_2" value="4" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_1_Augment_Potency_2" value="4" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_2_Augment_Potency_2" value="4" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_3_Augment_Potency_2" value="4" step="0.25" min="0"></td>
+        <td></td>
+        <td>能力2</td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Weapon_Augment_Potency_Floor_Increase_2" value="0" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_1_Augment_Potency_Floor_Increase_2" value="0" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_2_Augment_Potency_Floor_Increase_2" value="0" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_3_Augment_Potency_Floor_Increase_2" value="0" step="0.25" min="0"></td>
+      </tr>
+
+      <tr>
+        <td>能力3</td>
+        <td><input type="number" class="Augment_Potency" id="Weapon_Augment_Potency_3" value="3.75" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_1_Augment_Potency_3" value="3.75" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_2_Augment_Potency_3" value="3.75" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_3_Augment_Potency_3" value="3.75" step="0.25" min="0"></td>
+        <td></td>
+        <td>能力3</td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Weapon_Augment_Potency_Floor_Increase_3" value="0" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_1_Augment_Potency_Floor_Increase_3" value="0" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_2_Augment_Potency_Floor_Increase_3" value="0" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_3_Augment_Potency_Floor_Increase_3" value="0" step="0.25" min="0"></td>
+      </tr>
+
+      <tr>
+        <td>能力4</td>
+        <td><input type="number" class="Augment_Potency" id="Weapon_Augment_Potency_4" value="3.5" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_1_Augment_Potency_4" value="3.5" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_2_Augment_Potency_4" value="3.5" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_3_Augment_Potency_4" value="3.5" step="0.25" min="0"></td>
+        <td></td>
+        <td>能力4</td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Weapon_Augment_Potency_Floor_Increase_4" value="0" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_1_Augment_Potency_Floor_Increase_4" value="0" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_2_Augment_Potency_Floor_Increase_4" value="0" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_3_Augment_Potency_Floor_Increase_4" value="0" step="0.25" min="0"></td>
+      </tr>
+
+      <tr>
+        <td>能力5</td>
+        <td><input type="number" class="Augment_Potency" id="Weapon_Augment_Potency_5" value="3" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_1_Augment_Potency_5" value="3" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_2_Augment_Potency_5" value="3" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_3_Augment_Potency_5" value="3" step="0.25" min="0"></td>
+        <td></td>
+        <td>能力5</td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Weapon_Augment_Potency_Floor_Increase_5" value="2.25" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_1_Augment_Potency_Floor_Increase_5" value="2.25" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_2_Augment_Potency_Floor_Increase_5" value="2.25" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_3_Augment_Potency_Floor_Increase_5" value="2.25" step="0.25" min="0"></td>
+      </tr>
+
+      <tr>
+        <td>能力6</td>
+        <td><input type="number" class="Augment_Potency" id="Weapon_Augment_Potency_6" value="2.5" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_1_Augment_Potency_6" value="2.5" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_2_Augment_Potency_6" value="2.5" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_3_Augment_Potency_6" value="2.5" step="0.25" min="0"></td>
+        <td></td>
+        <td>能力6</td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Weapon_Augment_Potency_Floor_Increase_6" value="5" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_1_Augment_Potency_Floor_Increase_6" value="5" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_2_Augment_Potency_Floor_Increase_6" value="5" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_3_Augment_Potency_Floor_Increase_6" value="5" step="0.25" min="0"></td>
+      </tr>
+
+      <tr>
+        <td>補正</td>
+        <td><input type="number" class="Augment_Potency" id="Weapon_Potency" value="0" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_1_Potency" value="4" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_2_Potency" value="4" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency" id="Unit_3_Potency" value="4" step="0.25" min="0"></td>
+        <td></td>
+        <td>補正</td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Weapon_Potency_Floor_Increase" value="0" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_1_Potency_Floor_Increase" value="0" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_2_Potency_Floor_Increase" value="0" step="0.25" min="0"></td>
+        <td><input type="number" class="Augment_Potency_Floor_Increase" id="Unit_3_Potency_Floor_Increase" value="0" step="0.25" min="0"></td>
+        </td>
+      </tr>
+
+    </table>
+    <br>
+    <table>
+
+      <tr>
+        <th>武器攻撃力</th>
+        <th>武器下限</th>
+        <th>潜在1</th>
+        <th>潜在2</th>
+        <th>アタック</th>
+        <th>テルミナ</th>
+        <th>クリ率</th>
+      </tr>
+
+      <tr>
+        <td><input type="number" id="Weapon_ATK" value="727" step="1" min="0"></td>
+        <td>
+          <select id="Weapon_Variance">
+            <option value="0.5">50%</option>
+            <option value="0.7">70%</option>
+            <option value="0.75" selected>75%</option>
+          </select>
+        </td>
+        <td><input type="number" class="Non_Augment_Potency" id="Weapon_Properties_1" value="42" step="1"></td>
+        <td><input type="number" class="Non_Augment_Potency" id="Weapon_Properties_2" value="8" step="1" min="0"></td>
+        <td>
+          <select id="Fixa_Attack" class="Fixa">
+            <option value="0">無プリ</option>
+            <option value="2">アタ1</option>
+            <option value="3">アタ2</option>
+            <option value="4">アタ3</option>
+            <option value="4.5">アタ4</option>
+            <option value="5" selected>アタ5</option>
+          </select>
+        </td>
+        <td>
+          <select id="Fixa_Termina" class="Fixa">
+            <option value="0">無プリ</option>
+            <option value="6">テル1</option>
+            <option value="9">テル2</option>
+            <option value="12">テル3</option>
+            <option value="14">テル4</option>
+            <option value="15">テル5</option>
+          </select>
+        </td>
+        <td><input type="number" id="Crt_Rate" value="5" max="100" min="0"></td>
+      </tr>
+
+      <tr>
+        <th colspan="2">敵エネミーLv</th>
+        <th colspan="2">クラス</th>
+        <th>レベル</th>
+        <th>クラス補正</th>
+        <th>PA倍率</th>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <select class="wide" id="Enemy_Def">
+            <option value="450,900">Lv1中央エアリオ</option>
+            <option value="485,972">Lv5マグナス山R1</option>
+            <option value="534,1068">Lv10研究所R1</option>
+            <option value="587,1176">Lv15レゾルR1</option>
+            <option value="646,1292">Lv20エルノザR1</option>
+            <option value="711,1422">Lv25下層R1</option>
+            <option value="782,1565">Lv30エルノザR2</option>
+            <option value="860,1721">Lv35エアル黄R2</option>
+            <option value="946,1892">Lv40エルノザR3</option>
+            <option value="1041,2082">Lv45リテム黄R2</option>
+            <option value="1145,2291">Lv50</option>
+            <option value="1259,2520">Lv55クヴァ黄R1</option>
+            <option value="1385,2772" selected>Lv60エルノザR4</option>
+            <option value="1524,9999">Lv65デクストベース</option>
+            <option value="1583,9999">Lv67ノイゼンプラント</option>
+            <option value="1676,9999">Lv70エアリオR5</option>
+            <option value="1844,9999">Lv75野望の残滓</option>
+            <option value="1844,9999">Lv80マクアド下層R5</option>
+          </select>
+        </td>
+        <td colspan="2">
+          <select class="wide" id="Player_Class">
+            <option value="Class_00,450">ハンター</option>
+            <option value="Class_01,454">ファイター</option>
+            <option value="Class_02,448">レンジャー</option>
+            <option value="Class_03,451">ガンナー</option>
+            <option value="Class_04,453">フォース</option>
+            <option value="Class_05,446">テクター</option>
+            <option value="Class_06,452">ブレイバー</option>
+            <option value="Class_07,453">バウンサー</option>
+            <option value="Class_08,451" selected>ウェイカー</option>
+            <option value="Class_08,455">スレイヤー</option>
+          </select>
+        </td>
+        <td><input type="number" id="Player_Level" value="80" step="1" max="80" min="1"></td>
+        <td><input type="number" class="Non_Augment_Potency" id="Class_Boost" value="10" step="10" max="10" min="0"></td>
+        <td><input type="number" id="PA" value="205" step="1" min="0"></td>
+      </tr>
+
+      <tr>
+        <th>フード</th>
+        <th>シャッキ</th>
+        <th>攻撃マグ</th>
+        <th>チームマグ</th>
+        <th>Foアドオン</th>
+        <th>Fiアドオン</th>
+        <th>その他倍率</th>
+      </tr>
+
+      <tr>
+        <td><input type="number" class="Non_Augment_Potency" id="Food_Boost" value="10" step="0.2" max="10" min="0"></td>
+        <td><input type="number" id="Crisp_Food_Boost" value="5" step="0.5" max="5" min="0"></td>
+        <td><input type="number" class="Non_Augment_Potency" id="Mag_Potency" value="0" step="5" max="5" min="0"></td>
+        <td><input type="number" class="Non_Augment_Potency" id="Team_Mag_Potency" value="5" step="0.5" max="5" min="0"></td>
+        <td><input type="number" class="Non_Augment_Potency" id="Addon_Skill_Fo" value="5" step="0.25" max="5" min="0"></td>
+        <td><input type="number" id="Addon_Skill_Fi" value="10" step="0.5" max="10" min="0"></td>
+        <td><input type="number" class="Non_Augment_Potency" id="Extra_Potency" value="0" min="0"></td>
+      </tr>
+
+    </table>
+    <br>
+    <table>
+
+      <tr>
+        <th>武器上昇</th>
+        <th>下限補正</th>
+        <th></th>
+        <th class="wide">最低ダメ</th>
+        <th class="wide" id="Max_Result_Title">最大ダメ</th>
+        <th class="wide" id="Crt_Result_Title">クリダメ</th>
+        <th class="wide" id="Avg_Result_Title">期待値</th>
+      </tr>
+      <tr>
+        <td><input type="text" id="Potency" readonly="readonly" value="0"></td>
+        <td><input type="text" id="Potency_Floor_Increase" readonly="readonly" value="0"></td>
+        <td></td>
+        <td><input type="text" id="Min_Result" readonly="readonly" value="0"></td>
+        <td><input type="text" id="Max_Result" readonly="readonly" value="0"></td>
+        <td><input type="text" id="Crt_Result" readonly="readonly" value="0"></td>
+        <td><input type="text" id="Avg_Result" readonly="readonly" value="0"></td>
+      </tr>
+
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th class="wide" id="Element_Weakness_Min_Result_Title" style="display: none;">弱点属性最低</th>
+        <th class="wide" id="Element_Weakness_Max_Result_Title" style="display: none;">弱点属性最大</th>
+        <th class="wide" id="Element_Weakness_Crt_Result_Title" style="display: none;">弱点属性クリ</th>
+        <th class="wide" id="Element_Weakness_Avg_Result_Title" style="display: none;">弱点属性期待値</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><input type="text" id="Element_Weakness_Min_Result" readonly="readonly" value="0" style="display: none;"></td>
+        <td><input type="text" id="Element_Weakness_Max_Result" readonly="readonly" value="0" style="display: none;"></td>
+        <td><input type="text" id="Element_Weakness_Crt_Result" readonly="readonly" value="0" style="display: none;"></td>
+        <td><input type="text" id="Element_Weakness_Avg_Result" readonly="readonly" value="0" style="display: none;"></td>
+      </tr>
+    </table>
+  </form>
+  <br>
+  <table>
+    <tr><th>表示スタイル</th></tr>
+    <tr>
+      <td>
+        <select class="wide" id="ResultViewStyle" onchange="ResultViewChange();">
+          <option value="Style_00">最低ダメージのみ</option>
+          <option value="Style_01"  selected>通常表示</option>
+          <option value="Style_02">弱点属性追加</option>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <input type="button" value="計算" id="Calculation">
+</body>
+
+<footer>
+  <p>（C）SEGA『PHANTASY STAR ONLINE 2』公式サイト<a href="https://pso2.jp/">https://pso2.jp/</a></p>
+</footer>
+
+</html>
